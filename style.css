@@ -15,7 +15,7 @@
 	src: url('./ressources/polices/Fragmentcore.otf') format('opentype');
 }
 body {
-    background: url('../ressources/stefano-stacchini-jhPSJDhiRyQ-unsplashNB.jpg');
+    background: url('./ressources/stefano-stacchini-jhPSJDhiRyQ-unsplashNB.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

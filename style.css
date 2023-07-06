@@ -237,6 +237,7 @@ footer a:hover {
         position: fixed;
         z-index: 1;
         width: 100%;
+        right: auto;
         min-height: 40vh;
         display: flex;
         flex-direction: column;

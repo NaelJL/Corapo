@@ -120,7 +120,7 @@ nav a:hover {
 /* Titres */
 .h1-size {
     height: 60vh;
-    margin: 150px 0px 50px clamp(30px, 10vw, 100px);
+    margin: 150px auto 50px clamp(30px, 10vw, 100px);
 }
 h1 {
     font-size: clamp(50px, 10vw, 100px);

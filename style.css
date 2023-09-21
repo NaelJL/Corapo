@@ -1,21 +1,21 @@
+/* Police H1 */
 @font-face {
-	font-family: 'Typewriter';
-	src: url('./ressources/polices/XTypewriter-Regular.ttf') format('truetype');
+    font-family: 'SpecialElite';
+    src: url('./ressources/polices/Special_Elite/SpecialElite-Regular.ttf');
 }
+/* Police menu nav et figcaption */
 @font-face {
 	font-family: 'Louis George Cafe Light';
 	src: url('./ressources/polices/LouisGeorgesCafeLight.ttf') format('truetype');
 }
+/* Police corps de texte */
 @font-face {
 	font-family: 'Louis George Cafe';
 	src: url('./ressources/polices/LouisGeorgeCafe.ttf') format('truetype');
 }
-@font-face {
-	font-family: 'Fragment Core';
-	src: url('./ressources/polices/Fragmentcore.otf') format('opentype');
-}
+
 body {
-    background: url('./ressources/stefano-stacchini-jhPSJDhiRyQ-unsplashNB.jpg');
+    background: url('./ressources/hulki-okan-tabak-hLr1Co7dl7s-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -116,24 +116,24 @@ nav a:hover {
     background: rgb(247, 245, 245);
 }
 
-
 /* Titres */
 .h1-size {
     height: 60vh;
-    margin: 150px auto 50px clamp(30px, 10vw, 100px);
+    margin: 250px auto 50px clamp(30px, 15vw, 150px);
 }
 h1 {
-    font-size: clamp(50px, 10vw, 100px);
-    font-family: 'TypeWriter';
+    font-size: clamp(50px, 9vw, 90px);
+    font-family: 'SpecialElite';
+    text-shadow: 2px 2px black;
 }
 h2 {
     font-size: clamp(45px, 6vw, 60px);
-    font-family: 'Typewriter'; 
+    font-family: 'SpecialElite'; 
     margin: 0px;
     padding: 40px 0px;
 }
 h3 {
-    font-family: 'Typewriter'; 
+    font-family: 'SpecialElite'; 
     font-size: clamp(24px, 2.5vw, 80px);
     letter-spacing: 2px;
     font-size: 20px;
@@ -145,6 +145,11 @@ a {
     text-decoration: none;
     color: white;
     cursor: pointer;
+}
+figcaption {
+    text-align: center;
+    font-family: 'Louis George Cafe Light';
+    font-size: small;
 }
 
 /* Parties */
@@ -186,21 +191,62 @@ article {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.show-info {
-    width: 15px;
-    height: 15px;
-    background-image: url('./ressources/down-arrow.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+
+/* Elements spécifiques équipe / créations / ateliers */
+.team-photo {
+    width: 50%;
+    max-width: 550px;
+    margin: auto 25%;
 }
-.show-info:hover {
-    cursor: pointer;
+.team-photo-main {
+    width: 80%;
+    max-width: 650px;
+    margin: auto 10%;
 }
-.team-info {
-    display: none;
+.creations-img {
+    width: 50%;
+    max-width: 500px;
+    margin: auto 25%;
 }
-.team-info.active {
-    display: block;
+video {
+    margin: 20px 15%;
+}
+.when {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: 'Louis George Cafe Light';
+    font-size: 15px;
+}
+.when p {
+    margin: 0px;
+}
+.when a {
+    font-size: 15px;
+}
+.box-chu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+.box-chu p {
+    margin: 0px;
+}
+.img-chu {
+    width: 200px;
+    height: 160px;
+}
+
+/* Contact */
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact article {
+    margin-bottom: 0px;
 }
 
 /* Footer */
@@ -228,7 +274,7 @@ footer a:hover {
         position: static;
     }
 }
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 670px){
     /* Menu burger */
     .nav-toggler {
         visibility: visible;
@@ -267,8 +313,18 @@ footer a:hover {
     nav a::before {
         display: none;
     }
+
+    /* Elements spécifiques */
     main {
         margin: 110px auto 50px auto;
         padding: 25px 35px;
+    }
+    .box-chu {
+        flex-wrap: wrap;
+    }
+    .img-chu {
+        margin: 0 auto;
+        width: 150px;
+        height: 125px;
     }
 }

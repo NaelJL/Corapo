@@ -7,17 +7,17 @@ const showInfos = document.querySelectorAll('.show-info');
 
 
 // animation du titre à l'ouverture de la page
-const texte = "CORPORATION D'ACTES POETIQUES";
+const texte = "CORAPO - Corporation d'Actes Poétiques";
 
 function typewriter(txt, index){
-    if(index === 30){
+    if(index === 38){
         showMenu();
     }
     if(index < txt.length){
     setTimeout(() => {
         title.innerHTML += `${txt[index]}`;
         typewriter(txt, index +1);
-    }, 150);
+    }, 110);
 }
 };
 
@@ -37,13 +37,3 @@ function toggleNav () {
         nav.style.transform = 'translateY(-150%)';
       }
 }
-
-
-// afficher les informations de l'équipe artistique
-showInfos.forEach(button => {
-    button.addEventListener('click', e => {
-        const teamContainer = e.target.parentNode.parentNode;
-        const teamInfo = teamContainer.querySelector('.team-info'); 
-        teamInfo.classList.toggle('active');
-    })
-})

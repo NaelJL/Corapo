@@ -15,7 +15,7 @@
 }
 
 body {
-    background: url('./ressources/hulki-okan-tabak-hLr1Co7dl7s-unsplash.jpg');
+    background: url('./ressources/photos:videos/hulki-okan-tabak-hLr1Co7dl7s-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -187,7 +187,7 @@ article {
 .icon {
     width: 30px;
     height: 30px;
-    background-image: url('./ressources/spotlight-Freepik.png');
+    background-image: url('./ressources/icons:logo/spotlight-Freepik.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -243,10 +243,27 @@ video {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .contact article {
     margin-bottom: 0px;
+}
+.contact p {
+    margin: 0px;
+    padding: 0px;
+}
+.contact div {
+    margin: 25px auto;
+}
+.contact a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.logo-media {
+    width: 30px;
+    height: 30px;
 }
 
 /* Footer */
@@ -316,7 +333,7 @@ footer a:hover {
 
     /* Elements spécifiques et images */
     body {
-        background: url('./ressources/hulki-okan-tabak-hLr1Co7dl7s-uns.jpg');
+        background: url('./ressources/photos:videos/hulki-okan-tabak-hLr1Co7dl7s-uns.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -354,5 +371,9 @@ footer a:hover {
     }
     .contact {
         flex-direction: column;
+    }
+    .logo-media {
+        width: 40px;
+        height: 40px;
     }
 }

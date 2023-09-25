@@ -1,29 +1,32 @@
 const nav = document.querySelector('nav');
 const footer = document.querySelector('footer');
-const title = document.querySelector('h1');
+const divFirstText = document.querySelector('.first-text');
+const divSecondText = document.querySelector('.second-text');
 const burgerButton = document.querySelector('.nav-toggler');
 const teamInfos = document.querySelector('.team-info');
 const showInfos = document.querySelectorAll('.show-info');
 
 
 // animation du titre à l'ouverture de la page
-const texte = "CORAPO - Corporation d'Actes Poétiques";
+const firstText = "CORAPO";
+const secondText = "Corporation d'Actes Poétiques";
 
-function typewriter(txt, index){
-    if(index === 38){
-        showMenu();
-    }
+function typewriter(txt, index, div){
     if(index < txt.length){
     setTimeout(() => {
-        title.innerHTML += `${txt[index]}`;
-        typewriter(txt, index +1);
+        div.innerHTML += `${txt[index]}`;
+        typewriter(txt, index +1, div);
     }, 110);
 }
 };
 
 setTimeout(() => {
-    typewriter(texte, 0);
+    typewriter(firstText, 0, divFirstText);
 }, 300);
+
+setTimeout(() => {
+    typewriter(secondText, 0, divSecondText);
+}, 1600);
 
 
 // animation et affichage du menu burger

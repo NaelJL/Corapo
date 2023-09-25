@@ -1,17 +1,12 @@
-/* Font H1 */
+/* Font titles */
 @font-face {
     font-family: 'SpecialElite';
-    src: url('./resources/fonts/Special_Elite/SpecialElite-Regular.ttf');
+    src: url('./resources/fonts/SpecialElite-Regular.ttf') format('truetype');
 }
-/* Font nav and figcaption */
+/* Font body, nav and figcaption */
 @font-face {
-	font-family: 'Louis George Cafe Light';
-	src: url('./resources/fonts/LouisGeorgesCafeLight.ttf') format('truetype');
-}
-/* Font body */
-@font-face {
-	font-family: 'Louis George Cafe';
-	src: url('./resources/fonts/LouisGeorgeCafe.ttf') format('truetype');
+    font-family: 'IBM Plex Mono light';
+    src: url('./resources/fonts/IBMPlexMono-Light.ttf') format('truetype');
 }
 
 body {
@@ -19,9 +14,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-	color: rgb(240, 239, 239);
-    font-size: 18px;
-	font-family: 'Louis George Cafe';
+	color: #A6A6A6;
+    font-size: 16px;
+	font-family: 'IBM Plex Mono light';
 }
 
 /* Burger menu (animation of the logo) */
@@ -69,7 +64,7 @@ body {
 
 /* Navigation menu */
 nav {
-    font-family: 'Louis George Cafe Light';
+    font-family: 'IBM Plex Mono light';
     position: fixed;
     top: 0px;
     right: 7px;
@@ -119,12 +114,19 @@ nav a:hover {
 /* Titles and body */
 .size-h1 {
     height: 50vh;
-    margin: 250px auto 50px clamp(30px, 15vw, 150px);
+    margin: 250px auto 50px clamp(30px, 13vw, 130px);
 }
 h1 {
-    font-size: clamp(50px, 9vw, 90px);
     font-family: 'SpecialElite';
     text-shadow: 2px 2px black;
+    line-height: clamp(80px, 10vw, 100px);
+    color: #e7e7e7;
+}
+.first-text {
+    font-size: clamp(50px, 9vw, 90px);
+}
+.second-text {
+    font-size: clamp(30px, 7vw, 70px);
 }
 h2 {
     font-size: clamp(45px, 6vw, 60px);
@@ -148,23 +150,22 @@ a {
 }
 figcaption {
     text-align: center;
-    font-family: 'Louis George Cafe Light';
-    font-size: small;
+    font-family: 'IBM Plex Mono light';
+    font-size: 12px;
 }
 
 /* Main parts */
 main {
     text-align: left;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(19, 21, 20, 0.8);
     padding: 25px 50px;
-    color: black;
+    color: #A6A6A6;
     margin: 100px auto 80px auto;
     width: clamp(300px, 70vw, 700px);
-    box-shadow: 0px 0px 10px white;
 }
 main a {
-    color: black;
+    color: #A6A6A6;
     font-weight: 900;
     font-size: 19px;
 }
@@ -183,13 +184,6 @@ article {
     align-items: baseline;
     gap: 10px;
     margin-left: 50px;
-}
-.icon {
-    width: 30px;
-    height: 30px;
-    background-image: url('./resources/icons:logo/spotlight-Freepik.png');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 /* Specific elements (team / creations / workshops) */
@@ -215,8 +209,8 @@ video {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    font-family: 'Louis George Cafe Light';
-    font-size: 15px;
+    font-family: 'IBM Plex Mono light';
+    font-size: 14px;
 }
 .when p, .when a {
     margin: 0px;
@@ -273,10 +267,11 @@ video {
 footer {
     text-align: right;
     margin: 25px;
-    font-size: 14px;
+    font-size: 12px;
     position: fixed;
     bottom: 0;
     right: 0;
+    color: white;
 }
 footer p {
     margin: 0px;
@@ -294,7 +289,7 @@ footer a:hover {
         position: static;
     }
 }
-@media only screen and (max-width: 670px){
+@media only screen and (max-width: 770px){
     /* Burger menu */
     .nav-toggler {
         visibility: visible;
@@ -310,7 +305,6 @@ footer a:hover {
         gap: 15px;
         align-items: center;
         background: #000;
-        font-family: 'Louis George Cafe Light';
         box-shadow: 1px 5px 5px black;
         transform: translateY(-150%);
         transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
@@ -344,7 +338,10 @@ footer a:hover {
     }
     .size-h1 {
         height: 45vh;
-        margin: 250px auto 50px clamp(10px, 5vw, 50px);
+        margin: 220px auto 70px clamp(10px, 5vw, 50px);
+    }
+    h1 {
+        line-height: 68px;
     }
     main {
         margin: 110px auto 50px auto;

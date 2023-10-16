@@ -1,13 +1,9 @@
 const nav = document.querySelector('nav');
-const footer = document.querySelector('footer');
-const divFirstText = document.querySelector('.first-text');
-const divSecondText = document.querySelector('.second-text');
 const burgerButton = document.querySelector('.nav-toggler');
-const teamInfos = document.querySelector('.team-info');
-const showInfos = document.querySelectorAll('.show-info');
+const divFirstText = document.querySelector('.first-h1');
+const divSecondText = document.querySelector('.second-h1');
 
-
-// animation du titre à l'ouverture de la page
+// animation of the main title (h1)
 const firstText = "CORAPO";
 const secondText = "Corporation d'Actes Poétiques";
 
@@ -28,8 +24,7 @@ setTimeout(() => {
     typewriter(secondText, 0, divSecondText);
 }, 1600);
 
-
-// animation et affichage du menu burger
+// animation of the burger menu
 burgerButton.addEventListener('click', toggleNav);
 
 function toggleNav () {

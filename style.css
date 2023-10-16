@@ -122,23 +122,54 @@ h1 {
     line-height: clamp(80px, 10vw, 100px);
     color: #e7e7e7;
 }
-.first-text {
-    font-size: clamp(50px, 9vw, 90px);
+.invisible {
+    font-size: 10px;
+    color: transparent;
 }
-.second-text {
+.first-h1 {
+    font-size: clamp(50px, 9vw, 90px);
+    display: flex;
+    flex-direction: row;
+}
+.second-h1 {
     font-size: clamp(30px, 7vw, 70px);
+    display: flex;
+    flex-direction: row;
+}
+.third-h1 {
+    font-size: clamp(15px, 3vw, 30px);
+    text-shadow:   
+    -0.5px -0.5px 0 black,
+    2px -2px 1px black,
+    -0.5px 0.5px 0 black,
+    2px 2px 1px black; 
+    margin-top: clamp(15px, 2vw, 20px); 
 }
 h2 {
     font-size: clamp(45px, 6vw, 60px);
     font-family: 'SpecialElite'; 
     margin: 0px;
     padding: 40px 0px;
+    animation: fall 1s ease-out;
+    color: #cbc9c9;
+}
+/* H2 animation */
+@keyframes fall {
+    from {
+      transform: translateY(-80%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
 }
 h3 {
     font-family: 'SpecialElite'; 
     font-size: clamp(24px, 2.5vw, 80px);
     letter-spacing: 2px;
     font-size: 20px;
+    color: #bebdbd;
 }
 p {
     line-height: 30px;
@@ -277,10 +308,6 @@ footer p {
     margin: 0px;
     padding: 2px;
     text-shadow: 1px 1px black;
-}
-footer a:hover {
-    text-shadow: 2px 2px white;
-    color: transparent;
 }
 
 /* Responsive */

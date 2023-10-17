@@ -121,10 +121,12 @@ h1 {
     text-shadow: 5px 0 5px black;
     line-height: clamp(80px, 10vw, 100px);
     color: #e7e7e7;
+    position: relative;
 }
 .invisible {
     font-size: 10px;
     color: transparent;
+    text-shadow: none;
 }
 .first-h1 {
     font-size: clamp(50px, 9vw, 90px);
@@ -140,9 +142,9 @@ h1 {
     font-size: clamp(15px, 3vw, 30px);
     text-shadow:   
     -0.5px -0.5px 0 black,
-    2px -2px 1px black,
+    1.5px -1.5px 0.8px black,
     -0.5px 0.5px 0 black,
-    2px 2px 1px black; 
+    1.5px 1.5px 0.8px black; 
     margin-top: clamp(15px, 2vw, 20px); 
 }
 h2 {
@@ -312,8 +314,15 @@ footer p {
 
 /* Responsive */
 @media only screen and (max-width: 1300px){
+    /* the footer goes under the elements */
     footer {
         position: static;
+    }
+}
+@media only screen and (max-width: 1200px){
+    /* the secound-h1 takes two lines */
+    .secound-h1 {
+        
     }
 }
 @media only screen and (max-width: 770px){
@@ -369,6 +378,7 @@ footer p {
     }
     h1 {
         line-height: 68px;
+        position: relative;
     }
     main {
         margin: 110px auto 50px auto;

@@ -111,7 +111,7 @@ nav a:hover {
     background: rgb(247, 245, 245);
 }
 
-/* Titles and body */
+/* Index page */
 .size-h1 {
     height: 50vh;
     margin: 250px auto 50px clamp(30px, 13vw, 130px);
@@ -121,7 +121,6 @@ h1 {
     text-shadow: 5px 0 5px black;
     line-height: clamp(80px, 10vw, 100px);
     color: #e7e7e7;
-    position: relative;
 }
 .invisible {
     font-size: 10px;
@@ -132,21 +131,29 @@ h1 {
     font-size: clamp(50px, 9vw, 90px);
     display: flex;
     flex-direction: row;
+    padding-bottom: 17px;
 }
 .second-h1 {
     font-size: clamp(30px, 7vw, 70px);
     display: flex;
     flex-direction: row;
 }
-.third-h1 {
+.index-footer {
     font-size: clamp(15px, 3vw, 30px);
     text-shadow:   
     -0.5px -0.5px 0 black,
     1.5px -1.5px 0.8px black,
     -0.5px 0.5px 0 black,
     1.5px 1.5px 0.8px black; 
-    margin-top: clamp(15px, 2vw, 20px); 
+    position: fixed;
+    bottom: 28vh;
+    text-align: left;
+    right: auto;
+    left: clamp(30px, 13vw, 130px);
+    margin: 0px 10px;
 }
+
+/* Titles and subtitles*/
 h2 {
     font-size: clamp(45px, 6vw, 60px);
     font-family: 'SpecialElite'; 
@@ -155,7 +162,6 @@ h2 {
     animation: fall 1s ease-out;
     color: #cbc9c9;
 }
-/* H2 animation */
 @keyframes fall {
     from {
       transform: translateY(-80%);
@@ -173,6 +179,8 @@ h3 {
     font-size: 20px;
     color: #bebdbd;
 }
+
+/* Main parts */
 p {
     line-height: 30px;
 }
@@ -186,8 +194,6 @@ figcaption {
     font-family: 'IBM Plex Mono light';
     font-size: 12px;
 }
-
-/* Main parts */
 main {
     text-align: left;
     border-radius: 10px;
@@ -373,6 +379,9 @@ footer p {
     h1 {
         line-height: 68px;
         position: relative;
+    }
+    .index-footer{
+        bottom: 50vh;
     }
     main {
         margin: 110px auto 50px auto;

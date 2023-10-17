@@ -319,12 +319,6 @@ footer p {
         position: static;
     }
 }
-@media only screen and (max-width: 1200px){
-    /* the secound-h1 takes two lines */
-    .secound-h1 {
-        
-    }
-}
 @media only screen and (max-width: 770px){
     /* Burger menu */
     .nav-toggler {
@@ -374,7 +368,7 @@ footer p {
     }
     .size-h1 {
         height: 45vh;
-        margin: 220px auto 70px clamp(10px, 5vw, 50px);
+        margin: 180px auto 70px clamp(10px, 5vw, 50px);
     }
     h1 {
         line-height: 68px;
